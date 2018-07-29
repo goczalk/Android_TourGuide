@@ -38,9 +38,9 @@ public class PageFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.attractions_list_view, container, false);
 
-        final ArrayList<Attraction> words = new ArrayList<Attraction>();
+        final ArrayList<Attraction> words = new ArrayList<>();
         AttractionAdapter itemsAdapter = null;
-        itemsAdapter = addAppriopriateWords(words, itemsAdapter);
+        itemsAdapter = addAppriopriateWordsAndReturnAdapter(words, itemsAdapter);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
         listView.setAdapter(itemsAdapter);
@@ -48,7 +48,7 @@ public class PageFragment extends Fragment {
         return rootView;
     }
 
-    private AttractionAdapter addAppriopriateWords(ArrayList<Attraction> attractions, AttractionAdapter itemsAdapter) {
+    private AttractionAdapter addAppriopriateWordsAndReturnAdapter(ArrayList<Attraction> attractions, AttractionAdapter itemsAdapter) {
         switch (mPage) {
             case 0: itemsAdapter = addEventsAttractions(attractions);
                 break;
@@ -121,19 +121,19 @@ public class PageFragment extends Fragment {
         attractions.add(new Attraction("Light Move Festival", LocalDate.of(2018, 11, 12),
                                 "pl. Wolności, Lodz", R.drawable.light));
         attractions.add(new Attraction("Food Truck Festival", LocalDate.of(2018, 8, 23),
-                                "pl. Wolności, Lodz", R.drawable.food_truck));
+                                "Piotrkowska 217, Lodz", R.drawable.food_truck));
         attractions.add(new Attraction("Vegan Food Festival", LocalDate.of(2018, 10, 30),
-                                        "pl. Wolności, Lodz", R.drawable.vegan));
+                                        "Zgierska 28, Lodz", R.drawable.vegan));
         attractions.add(new Attraction("Spanish Cinematography Festival", LocalDate.of(2018, 9, 12),
-                                        "pl. Wolności, Lodz", R.drawable.spain));
+                                        "Sienkiewicza 17, Lodz", R.drawable.spain));
         attractions.add(new Attraction("Łódź's Days", LocalDate.of(2018, 12, 17),
-                                        "pl. Wolności, Lodz", R.drawable.lodz));
+                                        "Lodz", R.drawable.lodz));
         attractions.add(new Attraction("Easter Parade", LocalDate.of(2019, 3, 29),
-                                        "pl. Wolności, Lodz", R.drawable.easter));
+                                        "Piotrkowska, Lodz", R.drawable.easter));
         attractions.add(new Attraction("Night Skating - Roller skates", LocalDate.of(2019, 5, 4),
-                                        "pl. Wolności, Lodz", R.drawable.roller_skate));
+                                        "Dąbrowskiego, Lodz", R.drawable.roller_skate));
         attractions.add(new Attraction("'Unknown Łódź' Trip", LocalDate.of(2019, 1, 9),
-                                        "pl. Wolności, Lodz", R.drawable.unknown_lodz));
+                                        "Mickiewicza 18, Lodz", R.drawable.unknown_lodz));
 
         return new AttractionAdapter(getActivity(), attractions, R.color.attraction_event);
     }
