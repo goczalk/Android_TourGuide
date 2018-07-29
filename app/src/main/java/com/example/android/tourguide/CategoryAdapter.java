@@ -9,7 +9,7 @@ import android.support.v4.app.FragmentPagerAdapter;
  * Created by klaudia on 29/07/18.
  */
 
-class CategoryAdapter extends FragmentPagerAdapter  {
+public class CategoryAdapter extends FragmentPagerAdapter  {
 
     public static final int PAGE_COUNT = 4;
     private Context mContext;
@@ -29,11 +29,11 @@ class CategoryAdapter extends FragmentPagerAdapter  {
         if (position == 0) {
             return mContext.getString(R.string.category_events);
         } else if (position == 1) {
-            return mContext.getString(R.string.category_restaurants);
+            return mContext.getString(R.string.category_food);
         } else if (position == 2) {
             return mContext.getString(R.string.category_museums);
         } else {
-            return mContext.getString(R.string.category_entertainment);
+            return mContext.getString(R.string.category_other);
         }
     }
 

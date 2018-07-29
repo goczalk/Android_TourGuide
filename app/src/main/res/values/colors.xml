@@ -3,4 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="attraction_event">#15c3b9</color>
+    <color name="attraction_food">#baec16</color>
+    <color name="attraction_museum">#8b008b</color>
+    <color name="attraction_other">#DC7633</color>
 </resources>
