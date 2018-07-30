@@ -5,4 +5,24 @@
     <string name="category_food">food</string>
     <string name="category_museums">Museums</string>
     <string name="category_other">Other</string>
+    <string name="amusement_park">Amusement Park</string>
+    <string name="rope_park">Rope Park</string>
+    <string name="zoo">Zoo</string>
+    <string name="swimming_pool">Swimming Pool</string>
+    <string name="thermal_baths">Thermal baths</string>
+    <string name="aquapark">Aquapark</string>
+    <string name="trampoline_park">Trampoline Park</string>
+    <string name="city_museum">City Museum</string>
+    <string name="canal_museum">Canal Museum</string>
+    <string name="art_museum">Art Museum</string>
+    <string name="textile_museum">Textile Museum</string>
+    <string name="cinematography_museum">Cinematography Museum</string>
+    <string name="animation_museum">Animation Museum</string>
+    <string name="archeology_museum">Archeology Museum</string>
+    <string name="museum_of_independence">Museum of Independence</string>
+    <string name="book_art_museum">Book Art Museum</string>
+    <string name="science_center">Science Center</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="trip">Trip</string>
+    <string name="days">Days</string>
 </resources>
