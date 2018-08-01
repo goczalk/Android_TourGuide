@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<!--
+You can also use CardView to make your list more interactive
+CardView is another major element introduced in Material Design. Using CardView you can represent the information in a card manner with a drop shadow (elevation) and corner radius
+https://www.androidhive.info/2016/05/android-working-with-card-view-and-recycler-view/
+-->
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/attraction_linear_layout"
@@ -8,6 +14,10 @@
     android:minHeight="@dimen/item_height"
     android:orientation="horizontal">
 
+    <!--
+   you can also use scaleType attribute!
+   https://robots.thoughtbot.com/android-imageview-scaletype-a-visual-guide
+    -->
     <ImageView
         android:id="@+id/attraction_image"
         android:layout_width="@dimen/item_width"

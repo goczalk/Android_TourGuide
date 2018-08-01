@@ -75,3 +75,7 @@ class AttractionAdapter extends ArrayAdapter<Attraction> {
         return convertView;
     }
 }
+
+//TODO
+//https://dzone.com/articles/optimizing-your-listview
+

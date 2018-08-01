@@ -165,3 +165,15 @@ public class PageFragment extends Fragment {
 
 }
 
+//TODO
+//STRINGS
+//https://dzone.com/articles/optimizing-your-listview
+
+//TODO
+//dimens
+/*
+Supporting Multiple Screens - A padding of 8dp might look fine on a phone but terrible on a 10" tablet. You can create multiple dimens.xml to be used with different screens. That way you could do something like set 8dp for the phone and 64dp for the tablet. To create another dimens.xml file, right click your res folder and choose New > Value resource file. (see this answer for details)
+https://developer.android.com/guide/topics/resources/string-resource
+https://stackoverflow.com/questions/29128178/how-to-use-dimens-xml-in-android
+
+ */
